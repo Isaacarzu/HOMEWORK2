@@ -1,0 +1,15 @@
+function submitName() {
+    let userName = document.getElementById('userName').value;
+    let greetingElement = document.getElementById('greeting');
+    let nameInputDiv = document.getElementById('name-input');
+
+    if (userName) {
+        // Display the greeting message
+        greetingElement.textContent = "Welcome, " + userName + "!";
+        
+        // Hide the input field and button after name submission
+        nameInputDiv.style.display = 'none';
+    } else {
+        greetingElement.textContent = "Please enter your name!";
+    }
+}
